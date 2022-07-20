@@ -1,0 +1,83 @@
+body {
+  padding: 10px;
+  margin: auto;
+}
+#main-container{
+    margin-left:10%;
+    margin-left:10%;
+}
+.navbar {
+  background-color: rgb(1, 147, 112);
+}
+.navbar ul {
+  overflow: auto;
+}
+header {
+  display: inline-block;
+  margin: 0%;
+  padding: 0%;
+}
+ul img {
+  width: 80px;
+  display: grid;
+}
+.navbar li {
+  float: left;
+  list-style: none;
+  /* border:2px solid red; */
+  color: white;
+  padding: 10px 10px;
+}
+li select {
+  color: white;
+  background-color: rgb(1, 147, 112);
+  border: 0px;
+}
+#cricbuzz-plus {
+  border-radius: 30px;
+  /* border:2px solid black; */
+  background-color: white;
+  color: black;
+  margin-top: 5px;
+  width: 150px;
+  text-align: center;
+}
+#search > img {
+  width: 30px;
+}
+#profile > img {
+  width: 30px;
+}
+
+.parent {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 0px;
+  /* border: 2px solid black; */
+}
+
+.div1 {
+  grid-area: 1 / 1 / 4 / 2;
+  /* border: 2px solid red; */
+  background-color: rgb(254,254,255);
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px,
+    rgb(209, 213, 219) 0px 0px 0px 1px inset;
+}
+
+.div2 {
+  grid-area: 1 / 2 / 6 / 5;
+  /* border: 2px solid red; */
+  background-color: rgb(254,254,255);
+  height: 500px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px,
+    rgb(209, 213, 219) 0px 0px 0px 1px inset;
+}
+.div3 {
+  grid-area: 1 / 5 / 4 / 6;
+  /* border: 2px solid red; */
+  background-color: rgb(254,254,255);
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px,
+    rgb(209, 213, 219) 0px 0px 0px 1px inset;
+}
