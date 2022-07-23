@@ -514,7 +514,7 @@ document.querySelector("#search-img1").addEventListener("click",profile);
 
 function profile(){
 
-    location.href = "https://www.cricbuzz.com/premium-subscription/user/login";
+    location.href = "signUpPage.html";
 
 }
 
