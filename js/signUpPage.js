@@ -5,6 +5,7 @@ let data=JSON.parse(localStorage.getItem("userData"))||[];
 function addData(){
 
 
+
     let userObj={
         userName:document.querySelector("#name").value,
         userEmail:document.querySelector("#email").value,
@@ -20,4 +21,10 @@ location.href = "loginPage.html";
 document.querySelector(".home").addEventListener("click",home);
 function home(){
     location.href = "index.html";
+}
+
+document.querySelector(".btnAlready").addEventListener("click",already);
+function already(){
+
+    location.href="loginPage.html"
 }

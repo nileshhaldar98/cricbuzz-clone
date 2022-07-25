@@ -33,7 +33,7 @@
             />
             <input type="password" placeholder="Enter your password" id="password" />
             <div>
-              <input type="checkbox" /><span class="lia"
+              <input type="checkbox"onchange="activateButton(this) ><span class="lia"
                 >I agree with the Terms of Use and Privacy Policy of
                 Cricbuzz</span
               >
@@ -47,3 +47,21 @@
 </html>
 
 <script src="/js/login.js"></script>
+
+<script>
+  function disableSubmit() {
+   document.querySelector(".btnSubmit").disabled = true;
+  }
+ 
+   function activateButton(element) {
+ 
+       if(element.checked) {
+         document.querySelector(".btnSubmit").disabled = false;
+        }
+        else  {
+         document.querySelector(".btnSubmit").disabled = false;
+       }
+ 
+   }
+ </script>
+ 
