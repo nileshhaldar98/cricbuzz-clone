@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/signUpPage.css">
+  </head>
+  <body onload="disableSubmit()">
+    <div class="contaier"> 
+         <div id="top">
+      <img src="/src/cb_logo.svg" alt="" />
+    </div>
+    <div class="main">
+      <div class="top-head">
+        <h4> <span class="home">Home</span>>Account</h4>
+        <img
+          src="https://www.cricbuzz.com/images/cb_logo_plus_color.svg"
+          alt=""
+        />
+      </div>
+      <hr />
+      <div class="middle" >
+        <h2>Sign Up</h2>
+        <p>we will send OTP to your email id</p>
+        <div class="login">
+          <input type="text" name="" id="name" placeholder="Enter your Name" required />
+          <input type="email" name="" id="email" placeholder="Enter your email id" required />
+          <input type="number" name="" id="phone" placeholder="Enter your phone" required />
+          <input type="password" id="password" placeholder="Set new password"  required/>
+          <div>
+            <input type="checkbox"onchange="activateButton(this)"><span class="lia" >I agree with the Terms of Use and Privacy Policy of Cricbuzz</span>
+
+          </div>
+          <button class="btnSubmit">SignUP</button>
+          <button class="btnAlready">aleready have an account</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </body>
+</html>
+<script src="/js/signUpPage.js"></script>
+
+
+<script>
+ function disableSubmit() {
+  document.querySelector(".btnSubmit").disabled = true;
+ }
+
+  function activateButton(element) {
+
+      if(element.checked) {
+        document.querySelector(".btnSubmit").disabled = false;
+       }
+       else  {
+        document.querySelector(".btnSubmit").disabled = false;
+      }
+
+  }
+</script>
+
